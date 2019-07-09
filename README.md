@@ -164,6 +164,8 @@ As an added challenge, I attempted to incorporate an inception module in the sec
 ### Train, Validate and Test the Model
 
 I trained the model using the training set for 50 epochs, evaluating it on the validation set on each one. I plotted the validation set accuracy on a plot at the bottom of this code block. It converges at approximately 97% accuracy, with a maximum of 97.4% attained at epoch 48. I used a learning rate of 0.0007 and a batch size of 96. 
+  
+The following is a plot of the validation set accuracy over epochs.  
 
 ![alt text][image5]
 
@@ -213,7 +215,7 @@ Here are the five images I found online:
 ![alt text][image6]
 ![alt text][image7]
 
-I fed the model into the following code block, along with the 5 test images found online. I used the tf.nn.top_k function to output the top 5 softmax probabilities and the results were unexpectedly accurate. Not only did the model classify each sign correctly, it did so **with a 100% probability for each one**. Of course, extending to thousands more examples will begin to expose errors in the classifier, but this was completely unexpected, to say the least. Perhaps the images I picked were quite clear, and that passing in images taken in sub-optimal conditions might cause classification errors, but that could be a future test to be done.
+I fed the model into an evaluation code block, along with the 5 test images found online. I used the tf.nn.top_k function to output the top 5 softmax probabilities and the results were unexpectedly accurate. Not only did the model classify each sign correctly, it did so **with a 100% probability for each one**. Of course, extending to thousands more examples will begin to expose errors in the classifier, but this was completely unexpected, to say the least. Perhaps the images I picked were quite clear, and that passing in images taken in sub-optimal conditions might cause classification errors, but that could be a future test to be done.
 
 Therefore, the top 5 output array information is patently useless after the main prediction, since it appears to just output the first 4 labels in the softmax layer with exactly 0.0% probability. I'm assuming this is some type of tie-breaker for equal probabilities (of zero in this case).
 
