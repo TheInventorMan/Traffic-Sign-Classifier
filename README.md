@@ -217,40 +217,40 @@ I fed the model into the following code block, along with the 5 test images foun
 Therefore, the top 5 output array information is patently useless after the main prediction, since it appears to just output the first 4 labels in the softmax layer with exactly 0.0% probability. I'm assuming this is some type of tie-breaker for equal probabilities (of zero in this case).
 
 #### Output from the evaluation code block:
-INFO:tensorflow:Restoring parameters from ./lenet
-Image # 1
-14 : Stop with 100.0 % probability
-0 : Speed limit (20km/h) with 0.0 % probability
-1 : Speed limit (30km/h) with 0.0 % probability
-2 : Speed limit (50km/h) with 0.0 % probability
-3 : Speed limit (60km/h) with 0.0 % probability
-
-Image # 2
-18 : General caution with 100.0 % probability
-0 : Speed limit (20km/h) with 0.0 % probability
-1 : Speed limit (30km/h) with 0.0 % probability
-2 : Speed limit (50km/h) with 0.0 % probability
-3 : Speed limit (60km/h) with 0.0 % probability
-
-Image # 3
-34 : Turn left ahead with 100.0 % probability
-0 : Speed limit (20km/h) with 0.0 % probability
-1 : Speed limit (30km/h) with 0.0 % probability
-2 : Speed limit (50km/h) with 0.0 % probability
-3 : Speed limit (60km/h) with 0.0 % probability
-
-Image # 4
-22 : Bumpy road with 100.0 % probability
-0 : Speed limit (20km/h) with 0.0 % probability
-1 : Speed limit (30km/h) with 0.0 % probability
-2 : Speed limit (50km/h) with 0.0 % probability
-3 : Speed limit (60km/h) with 0.0 % probability
-
-Image # 5
-1 : Speed limit (30km/h) with 100.0 % probability
-0 : Speed limit (20km/h) with 0.0 % probability
-2 : Speed limit (50km/h) with 0.0 % probability
-3 : Speed limit (60km/h) with 0.0 % probability
-4 : Speed limit (70km/h) with 0.0 % probability
-
+INFO:tensorflow:Restoring parameters from ./lenet  
+Image # 1  
+14 : Stop with 100.0 % probability  
+0 : Speed limit (20km/h) with 0.0 % probability  
+1 : Speed limit (30km/h) with 0.0 % probability  
+2 : Speed limit (50km/h) with 0.0 % probability  
+3 : Speed limit (60km/h) with 0.0 % probability  
+  
+Image # 2  
+18 : General caution with 100.0 % probability  
+0 : Speed limit (20km/h) with 0.0 % probability  
+1 : Speed limit (30km/h) with 0.0 % probability  
+2 : Speed limit (50km/h) with 0.0 % probability  
+3 : Speed limit (60km/h) with 0.0 % probability  
+  
+Image # 3  
+34 : Turn left ahead with 100.0 % probability  
+0 : Speed limit (20km/h) with 0.0 % probability  
+1 : Speed limit (30km/h) with 0.0 % probability  
+2 : Speed limit (50km/h) with 0.0 % probability  
+3 : Speed limit (60km/h) with 0.0 % probability  
+  
+Image # 4  
+22 : Bumpy road with 100.0 % probability  
+0 : Speed limit (20km/h) with 0.0 % probability  
+1 : Speed limit (30km/h) with 0.0 % probability  
+2 : Speed limit (50km/h) with 0.0 % probability  
+3 : Speed limit (60km/h) with 0.0 % probability  
+  
+Image # 5  
+1 : Speed limit (30km/h) with 100.0 % probability  
+0 : Speed limit (20km/h) with 0.0 % probability  
+2 : Speed limit (50km/h) with 0.0 % probability  
+3 : Speed limit (60km/h) with 0.0 % probability  
+4 : Speed limit (70km/h) with 0.0 % probability  
+  
 
