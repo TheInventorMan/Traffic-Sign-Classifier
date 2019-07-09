@@ -91,22 +91,22 @@ Applying the concepts from the linked Sermanet/LeCun paper significantly improve
 As an added challenge, I attempted to incorporate an inception module in the second layer by passing the inputs through a 3x3 convolution in addition to the original 5x5, and concatenating the outputs to be sent through the rest of the network. Needless to say, the number of parameters increased significantly because of the "branch and merge" step later in the network. There was an improvement in the validation set accuracy of 0.2%, but no change to the test set accuracy. It did, however, take a **lot** more time to train and evaluate. Oh well...
 
 ##### Attempt 1: Please refer to LeNet5.py. Original LeNet-5 network implementation from lab. 
-###### Max validation accuracy = 86%
+###### Max validation accuracy = 86%  
   
-
+  
 ##### Attempt 2: Please refer to LeNet6.py. Added another fully-connected layer and called it LeNet-6.
-###### Max validation accuracy = 88%
+###### Max validation accuracy = 88%  
   
-
+  
 ##### Attempt 3: Please refer to LeNet6v2.py. Implemented the branching scheme from the Sermanet/LeCun paper and used Leaky ReLU activations. 
 [Link to the paper](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf).
-###### Max validation accuracy = 97.4%, Test accuracy  = 95.4% (Best so far)
+###### Max validation accuracy = 97.4%, Test accuracy  = 95.4% (Best so far)  
   
-
+  
 ##### Attempt 4: Please refer to LeCeption.py. Added inception on the second convolution layer.
-###### Max validation accuracy = 97.6%, Test accuracy = 95.4%. However, training was noticeably slower.
+###### Max validation accuracy = 97.6%, Test accuracy = 95.4%. However, training was noticeably slower.  
   
-
+  
 
 #### Here's the architecture of the final model (Settled on "Attempt 3" above):
 
@@ -157,8 +157,9 @@ As an added challenge, I attempted to incorporate an inception module in the sec
 ---
 8\. (a) Fully-connected. Input = 84. Output = 43.
 
-8\. (b) Logit output
+8\. (b) Logit output  
 
+---
 
 ### Train, Validate and Test the Model
 
