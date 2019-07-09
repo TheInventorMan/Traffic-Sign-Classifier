@@ -93,15 +93,19 @@ As an added challenge, I attempted to incorporate an inception module in the sec
 ##### Attempt 1: Please refer to LeNet5.py. Original LeNet-5 network implementation from lab. 
 ###### Max validation accuracy = 86%
 
+
 ##### Attempt 2: Please refer to LeNet6.py. Added another fully-connected layer and called it LeNet-6.
 ###### Max validation accuracy = 88%
+
 
 ##### Attempt 3: Please refer to LeNet6v2.py. Implemented the branching scheme from the Sermanet/LeCun paper and used Leaky ReLU activations. 
 [Link to the paper](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf).
 ###### Max validation accuracy = 97.4%, Test accuracy  = 95.4% (Best so far)
 
+
 ##### Attempt 4: Please refer to LeCeption.py. Added inception on the second convolution layer.
 ###### Max validation accuracy = 97.6%, Test accuracy = 95.4%. However, training was noticeably slower.
+
 
 
 #### Here's the architecture of the final model (Settled on "Attempt 3" above):
